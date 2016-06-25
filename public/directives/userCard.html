@@ -1,0 +1,57 @@
+<div id= "userCards" ng-show="usersDataArray.length > 0">
+
+  <div id="tools" ng-show="usersDataArray">
+        <md-select class="md-no-underline" placeholder="Sort By" name="sortby" ng-model="sortProp" id="sortby">
+        <md-option value="screen_name" ng-selected="!selected">Screen Name</md-option>
+        <md-option value="followers_count"># Followers</md-option>
+        <md-option value="friends_count"># Friends</md-option>
+        <md-option value="statuses_count"># Status Updates</md-option>
+        <md-option value="listed_count"># Listed</md-option>
+        <md-option value="favourites_count">Favorites Count</md-option>
+        </md-select>
+
+        <md-select class="md-no-underline" name="sortorder" ng-model="sortDirection" id="sortorder">
+        <md-option value="" ng-selected="!selected">Ascending</md-option>
+        <md-option value="-">Descending</md-option>
+        </md-select>
+  </div>
+
+
+
+<div id="userCard" ng-repeat="user in usersDataArray | orderBy: sortProp : sortDirection">
+
+        <div id="cardHead"><img ng-src="{{user.profile_image_url}}"> <p>@{{ user.screen_name }}</p>
+
+        <span id="cardCtrl"><i class="fa fa-angle-double-right" aria-hidden="true"></i><span>
+
+        </div>
+        <div id="cardContent">
+
+          <div class="col">
+            <ul class="fa-ul">
+            <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> {{ user.name }}</li>
+            <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> Location: {{ user.location ? user.location : "undetermined" }}</li>
+            <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> {{ user.verified ? "Verified" : "Not verified" }}</li>
+            <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> Created <span am-time-ago="user.created_at"></span></li>
+            <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> {{ user.following ? "You are following" : "You are not following" }}</li>
+          </ul>
+          </div>
+            <div class="col">
+            <ul class="fa-ul">
+           <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> {{ user.followers_count | number }} followers</li>
+           <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> {{ user.friends_count | number}} friends</li>
+           <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> {{ user.statuses_count | number}} tweets and retweets</li>
+           <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> {{ user.favourites_count | number}} tweets favorited</li>
+           <li><i class="fa-li fa fa-twitter" aria-hidden="true"></i> On {{ user.listed_count | number}} lists</li>
+            </ul>
+        </div>
+
+        <div class="row">
+
+        <button ng-click="deleteCard(user)" id="removeBtn"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove Card</button>
+        <a target="_blank" ng-href="http://www.twitter.com/{{user.screen_name}}"><button id="profileBtn"><i class="fa fa-eye" aria-hidden="true"></i> View Profile</button></a>
+
+  </div>
+  </div>
+  </div>
+  </div>

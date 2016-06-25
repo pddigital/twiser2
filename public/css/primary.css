@@ -1,0 +1,483 @@
+/* Simple grid layout for web projects */
+/* line 15, /Users/Lycosidae/Documents/webprojects/eventsapp/css/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 25, /Users/Lycosidae/Documents/webprojects/eventsapp/css/reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 28, /Users/Lycosidae/Documents/webprojects/eventsapp/css/reset.scss */
+body {
+  line-height: 1; }
+
+/* line 31, /Users/Lycosidae/Documents/webprojects/eventsapp/css/reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 34, /Users/Lycosidae/Documents/webprojects/eventsapp/css/reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 38, /Users/Lycosidae/Documents/webprojects/eventsapp/css/reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 42, /Users/Lycosidae/Documents/webprojects/eventsapp/css/reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* box sizing preferences */
+/* line 49, /Users/Lycosidae/Documents/webprojects/eventsapp/css/reset.scss */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=reset.css.map */
+body {
+  background-color: black;
+  background-image: url("../images/city-buildings-silhouettes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto !important; }
+
+.container {
+  width: 100%;
+  height: auto;
+  min-height: 600px; }
+
+nav {
+  width: 100%;
+  padding-left: 10%;
+  padding-right: 10%;
+  height: 100px;
+  margin-bottom: 5%;
+  display: block; }
+
+.contentContainer {
+  width: 80%;
+  margin: auto;
+  padding: 2%;
+  text-align: center;
+  min-height: 600px;
+  clear: both;
+  max-width: 900px; }
+
+#userSignIn {
+  text-align: center;
+  width: 100%;
+  margin: 1%; }
+
+#logo {
+  float: left;
+  line-height: 100px; }
+
+#navLinks {
+  width: 70%;
+  float: right;
+  line-height: 100px;
+  display: block; }
+
+#mobileBar {
+  display: none; }
+
+#userCards {
+  padding-top: 25px;
+  width: 80%;
+  margin: auto;
+  height: auto; }
+
+p, li, h1, h2, h3, h4 {
+  font-family: Roboto, sans-serif;
+  color: white; }
+
+a:link {
+  color: #ffc567;
+  text-decoration: none;
+  cursor: pointer; }
+
+a:visited {
+  color: #ffc567;
+  text-decoration: none;
+  cursor: pointer; }
+
+a:hover {
+  color: #B27613;
+  text-decoration: none;
+  cursor: pointer; }
+
+a:active {
+  color: #B27613;
+  text-decoration: none;
+  cursor: pointer; }
+
+h1 {
+  font-size: 4em;
+  font-weight: bolder; }
+
+h2 {
+  font-size: 2.2em;
+  font-weight: bold; }
+
+h3 {
+  font-size: 1.6em;
+  text-align: left;
+  font-weight: lighter;
+  line-height: 1.2;
+  margin-bottom: 1.2em; }
+
+#emptyMsg {
+  margin-top: 20px;
+  text-align: center; }
+
+nav ul {
+  text-align: right; }
+
+nav ul li {
+  display: inline;
+  margin-left: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #ffc567; }
+
+nav ul li:hover {
+  color: #B27613; }
+
+input {
+  border: 2px solid #256EB2;
+  width: 50%;
+  font-size: 1.4em;
+  padding: 18px; }
+
+#userInput::before {
+  content: "@";
+  font-size: 1.4em;
+  color: white;
+  font-family: Roboto, sans-serif;
+  height: 57px;
+  width: 57px;
+  display: inline-block;
+  line-height: 53px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#256eb2+0,4096ee+100 */
+  background: #256eb2;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #256eb2 0%, #4096ee 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #256eb2 0%, #4096ee 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #256eb2 0%, #4096ee 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#256eb2', endColorstr='#4096ee',GradientType=0 );
+  /* IE6-9 */
+  border-left: 2px solid #256EB2;
+  border-top: 2px solid #256EB2;
+  border-bottom: 2px solid #256EB2;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px; }
+
+@-moz-document url-prefix() {
+  #userInput::before {
+    line-height: 52px; } }
+button {
+  width: auto;
+  padding: 17px;
+  background-color: #FFBC4E;
+  color: white;
+  border: none;
+  font-size: 1.4em;
+  margin: 0;
+  border-radius: 5px 5px;
+  border: 2px solid #B27613;
+  cursor: pointer;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffaf4b+0,ff920a+100;Orange+3D+%231 */
+  background: #ffaf4b;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ffaf4b 0%, #ff920a 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffaf4b 0%, #ff920a 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffaf4b 0%, #ff920a 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffaf4b', endColorstr='#ff920a',GradientType=0 );
+  /* IE6-9 */ }
+
+button:hover {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff9513+0,dc7900+100 */
+  background: #ff9513;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ff9513 0%, #dc7900 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ff9513 0%, #dc7900 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ff9513 0%, #dc7900 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9513', endColorstr='#dc7900',GradientType=0 );
+  /* IE6-9 */ }
+
+#userSignIn button {
+  font-weight: bold;
+  font-size: 1.4em;
+  width: 300px;
+  border-radius: 15px 15px; }
+
+#errorMsg {
+  width: 70%;
+  margin: 20px auto;
+  border: 1px solid #FFBC4E;
+  background: rgba(255, 0, 0, 0.5);
+  color: white;
+  font-family: Roboto, sans-serif;
+  padding: 10px;
+  font-size: 1.2em; }
+
+#errorMsg span {
+  float: left;
+  cursor: pointer; }
+
+#userCard {
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px;
+  text-align: left; }
+
+#cardHead {
+  height: auto;
+  width: 100%;
+  margin: auto;
+  padding: 5px;
+  background: #256eb2;
+  background: -moz-linear-gradient(top, #256eb2 0%, #4096ee 100%);
+  background: -webkit-linear-gradient(top, #256eb2 0%, #4096ee 100%);
+  background: linear-gradient(to bottom, #256eb2 0%, #4096ee 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#256eb2', endColorstr='#4096ee',GradientType=0 );
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid white;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  cursor: pointer; }
+
+#cardContent {
+  background-color: white;
+  border: 1px solid white;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: auto; }
+
+#cardContent p {
+  color: black; }
+
+#cardHead img {
+  border-radius: 50%;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px; }
+
+#cardHead p {
+  font-weight: bold;
+  text-transform: uppercase;
+  display: inline;
+  font-size: 1.2em;
+  margin: 0;
+  margin-left: 20px;
+  vertical-align: middle; }
+
+#cardCtrl {
+  display: inline;
+  vertical-align: middle;
+  font-size: 2em;
+  color: white;
+  text-align: right;
+  float: right;
+  line-height: 52px; }
+
+#tools {
+  width: 100%;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-size: 1em;
+  text-align: center; }
+
+#tools label {
+  display: block; }
+
+#tools md-select {
+  width: 250px;
+  display: inline-block;
+  margin-right: 10px; }
+
+md-select.md-default-theme:not([disabled]):focus ._md-select-value, md-select:not([disabled]):focus ._md-select-value {
+  color: white; }
+
+._md-select-value > span:not(._md-select-icon) ._md-text {
+  display: inline-block !important;
+  font-weight: bolder !important;
+  padding-bottom: 5px !important;
+  font-size: 18px !important; }
+
+.col {
+  width: 38%; }
+
+.row {
+  width: 100%;
+  clear: both;
+  text-align: right;
+  margin-top: 10px; }
+
+.row button {
+  height: 40px;
+  line-height: 1;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 5px;
+  padding-right: 10px;
+  border: none; }
+
+#removeBtn {
+  background: gray; }
+
+#removeBtn:hover {
+  background: #303030; }
+
+#profileBtn {
+  background: #256EB2; }
+
+#profileBtn:hover {
+  background: #0099FF; }
+
+.col li {
+  color: black; }
+
+@media (max-width: 800px) {
+  body {
+    background-image: none; }
+
+  .container {
+    background-color: black;
+    background-image: url("../images/city-buildings-silhouettes.jpg");
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .contentContainer {
+    padding-top: 5%;
+    width: 100%; }
+
+  #hamburger {
+    display: block;
+    text-align: right;
+    font-size: 2.5em;
+    color: white;
+    clear: both;
+    height: auto;
+    font-family: Roboto, sans-serif;
+    font-weight: bold; }
+
+  #hamburgerMenu {
+    cursor: pointer; }
+
+  #hamburger #mobileLogo {
+    float: left;
+    cursor: pointer; }
+
+  h2 {
+    font-size: 1.8em; }
+
+  #mobileBar {
+    display: block;
+    width: 100%;
+    background-color: #256EB2;
+    padding: 2%; }
+
+  #logo {
+    display: none;
+    float: none; }
+
+  nav {
+    height: auto;
+    padding: 0;
+    margin-bottom: 0; }
+
+  #navLinks {
+    width: 100%;
+    float: none;
+    display: none; }
+
+  nav ul {
+    text-align: center; }
+
+  nav ul li {
+    display: block;
+    line-height: 60px;
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    font-size: 1.2em;
+    background-color: #4EAAFF;
+    border-bottom: 1px white solid; }
+
+  nav ul li:hover {
+    color: currentColor; }
+
+  #userSignIn button {
+    width: 90%;
+    margin: auto;
+    font-size: 1em; }
+
+  input {
+    width: 98%;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 5%; }
+
+  button {
+    font-size: 1.2em;
+    margin-top: 10px;
+    width: 98%;
+    padding: 5%; }
+
+  #userInput::before {
+    display: none; }
+
+  #userCards {
+    width: 100%; }
+
+  #tools md-select {
+    width: 40%;
+    margin-right: 5%; }
+
+  .col {
+    width: 50%; } }
+
+/*# sourceMappingURL=primary.css.map */

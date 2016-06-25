@@ -1,0 +1,20 @@
+
+<div class="contentContainer">
+
+<form ng-submit="getUserData(userInput)">
+  <span id="userInput"><input type="text" placeholder="Type in a twitter user name" ng-model="userInput"></span>
+  <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+ Add to Dashboard</button>
+</form>
+
+<div id="errorMsg" ng-show="getUserError"><span ng-click="getUserError = false; userInput = ''"><i class="fa fa-times-circle" aria-hidden="true"></i></span>
+ {{userInput}} is not a Twitter user!</div>
+
+<h3 id="emptyMsg" ng-hide="usersDataArray.length">The dashboard is empty! Please add some users.</h3>
+
+<user-card></user-card>
+
+
+<button ng-show="usersDataArray.length" ng-click="pushUser()">Save Dashboard</button>
+
+</div>

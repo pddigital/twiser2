@@ -1,0 +1,22 @@
+
+<div id="mobileBar">
+  <span id="hamburger"><span ui-sref="home" id="mobileLogo"><i class="fa fa-user" aria-hidden="true"></i> twiser</span> <i id="hamburgerMenu" class="fa fa-bars" aria-hidden="true"></i></span>
+</div>
+<nav>
+<div id="logo"><a ui-sref="home"><h1><i class="fa fa-user" aria-hidden="true"></i> twiser</h1></a></div>
+
+  <div id="navLinks">
+
+  <ul>
+
+     <a href="#" ng-click="connectLink()"><li id="loginLink" ng-hide="$root.isReady"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</li></a>
+
+     <a ng-click="signOutLink()" href="#"><li id="logoutLink" ng-show="$root.isReady"><i class="fa fa-times-circle-o" aria-hidden="true"></i> Logout</li></a>
+
+     <a ui-sref="about"><li><i class="fa fa-info-circle" aria-hidden="true"></i> About</li></a>
+
+  </ul>
+  </div>
+
+
+</nav>

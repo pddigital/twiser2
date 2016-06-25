@@ -1,0 +1,129 @@
+@media (max-width: 800px) {
+
+
+body {
+  background-image: none;
+}
+
+.container {
+  background-color: black;
+  background-image:url('../images/city-buildings-silhouettes.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+}
+
+.contentContainer {
+  padding-top: 5%;
+  width: 100%;
+}
+
+#hamburger {
+  display: block;
+  text-align: right;
+  font-size: 2.5em;
+  color: white;
+  clear: both;
+  height: auto;
+  font-family: $font-stack;
+  font-weight: bold;
+}
+
+#hamburgerMenu {
+  cursor: pointer;
+}
+
+#hamburger #mobileLogo {
+  float: left;
+  cursor: pointer;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+
+#mobileBar {
+  display: block;
+  width: 100%;
+  background-color: $dark-blue;
+  padding: 2%;
+}
+
+
+#logo {
+  display: none;
+  float: none;
+}
+
+nav {
+  height: auto;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+#navLinks {
+  width: 100%;
+  float: none;
+  display: none;
+}
+
+
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  display: block;
+  line-height: 60px;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  font-size: 1.2em;
+  background-color: $medium-blue;
+  border-bottom: 1px white solid;
+}
+
+nav ul li:hover {
+  color: currentColor;
+}
+
+
+#userSignIn button {
+  width: 90%;
+  margin: auto;
+  font-size: 1em;
+}
+
+input {
+  width: 98%;
+  font-size: 1.2em;
+  text-align: center;
+  padding: 5%;
+}
+
+button {
+  font-size: 1.2em;
+  margin-top: 10px;
+  width: 98%;
+  padding: 5%;
+}
+
+#userInput::before {
+  display: none;
+}
+
+#userCards {
+  width: 100%;
+}
+
+#tools md-select {
+  width: 40%;
+  margin-right: 5%;
+}
+
+
+.col {
+  width: 50%;
+}
+
+}

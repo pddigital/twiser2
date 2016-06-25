@@ -1,0 +1,69 @@
+p, li, h1, h2, h3, h4 {
+  font-family: $font-stack;
+  color: white;
+}
+
+a:link {
+  color: $medium-orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:visited {
+  color: $medium-orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:hover {
+  color: $dark-orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:active {
+  color: $dark-orange;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: bolder;
+}
+
+h2 {
+  font-size: 2.2em;
+  font-weight: bold;
+
+}
+
+h3 {
+  font-size: 1.6em;
+  text-align: left;
+  font-weight: lighter;
+  line-height: 1.2;
+  margin-bottom: 1.2em;
+}
+
+#emptyMsg {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav ul {
+  text-align: right;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 10%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: $medium-orange;
+}
+
+nav ul li:hover {
+  color: $dark-orange;
+}

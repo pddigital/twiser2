@@ -1,0 +1,40 @@
+<!doctype html>
+<html ng-app="twiser">
+  <head>
+    <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twiser: Real-Time Twitter User Dashboard</title>
+    <link rel="stylesheet" href="css/primary.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" charset="utf-8">
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-grid/3.1.1/ui-grid.css">
+
+  </head>
+    <body>
+      <nav-bar></nav-bar>
+      <div class="container">
+        <ui-view></ui-view>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/oauth-io/0.5.2/oauth.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-animate.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-aria.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular-messages.min.js"></script>
+    <!-- Angular Material Library -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0-rc2/angular-material.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-moment/1.0.0-beta.6/angular-moment.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src="js/twitterService.js"></script>
+    <script src="js/mongoService.js"></script>
+    <script src="controllers/dashCtrl.js"></script>
+    <script src="controllers/homeCtrl.js"></script>
+    <script src="directives/navBar.js"></script>
+    <script src="directives/userCard.js"></script>
+</body>
+</html>
