@@ -9,7 +9,7 @@ const port = 9000;
 const masterRoutes = require('./server/twiserRoutes')
 
 const app = express();
-const mongoUri = `mongodb://localhost:27017/twiser`;
+const mongoUri = `mongodb://heroku_5l344rtz:9umf8hib7basg24ts73223okkc@ds023704.mlab.com:23704/heroku_5l344rtz`;
 
 mongoose.connect(mongoUri);
 mongoose.connection.once(`open`, ()=> {
@@ -23,6 +23,6 @@ app.use(express.static(__dirname + '/public'));
 app.use(cors(corsOptions));
 masterRoutes(app);
 
-app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
-});
+app.listen(port, ()=> {
+  console.log(`Express listening on ${port}`)
+})
