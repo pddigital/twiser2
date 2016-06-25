@@ -2,10 +2,8 @@ const express = require('express')
 const {json} = require('body-parser')
 const mongoose = require('mongoose')
 const cors = require('cors')
-const corsOptions = {
-  origin: 'http://localhost:5000'
-}
-const port = 5000;
+
+const port = process.env.PORT || 8080;
 const masterRoutes = require('./server/twiserRoutes')
 
 const app = express();
