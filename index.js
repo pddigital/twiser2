@@ -14,7 +14,7 @@ mongoose.connect('mongodb://localhost:27017/twiser');
 
 app.use(json());
 
-app.use(express.static(__dirname + '/public'));
+app.use('/twiser', express.static(__dirname + '/public'));
 
 app.use(cors(corsOptions));
 masterRoutes(app);
