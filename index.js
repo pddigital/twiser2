@@ -2,13 +2,15 @@ const express = require('express')
 const {json} = require('body-parser')
 const mongoose = require('mongoose')
 const cors = require('cors')
-
-const port = process.env.PORT || 8080;
+const port = 9000;
 const masterRoutes = require('./server/twiserRoutes')
+const corsOptions = {
+  origin: 'http://localhost:9000'
+}
 
 const app = express();
 
-mongoose.connect(MONGODB_URI);
+mongoose.connect('mongodb://localhost:27017/twiser');
 // mongoose.connection.once(`open`, ()=> {
 //   console.log(`Connected to mongo at ${mongoUri}`)
 // })
