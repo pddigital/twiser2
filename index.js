@@ -1,7 +1,7 @@
 const express = require('express')
 const {json} = require('body-parser')
 const mongoose = require('mongoose')
-// const cors = require('cors')
+const cors = require('cors')
 const port = 9000;
 const masterRoutes = require('./server/twiserRoutes')
 const corsOptions = {
