@@ -16,7 +16,7 @@ app.use(json());
 
 app.use('/twiser', express.static(__dirname + '/public'));
 
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
 masterRoutes(app);
 
 app.listen(port, ()=> {
