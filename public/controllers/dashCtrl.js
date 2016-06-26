@@ -15,7 +15,6 @@ angular.module('twiser').controller('dashCtrl', function($scope, twitterService,
               $scope.retrieveSaved();
             }
             else if (!data){
-              console.log('Error on auth user get');
             }
     })}
 
