@@ -19,6 +19,6 @@ app.use('/twiser', express.static(__dirname + '/public'));
 // app.use(cors(corsOptions));
 masterRoutes(app);
 
-app.listen(port, 'localhost' ()=> {
+app.listen(port, 'localhost', ()=> {
   console.log(`Express listening on ${port}`)
 })
