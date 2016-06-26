@@ -18,7 +18,5 @@ angular.module('twiser').controller('homeCtrl', function($scope, twitterService,
           twitterService.clearCache();
           $rootScope.isReady = twitterService.isReady();
       }
-
       $scope.isReady = twitterService.isReady();
-
 });

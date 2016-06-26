@@ -11,7 +11,6 @@ angular.module('twiser').controller('dashCtrl', function($scope, twitterService,
         twitterService.getTwitterRequest(twitter.authRequestUrl).then(function(data) {
             if (data) {
               $scope.authData = data;
-              console.log($scope.authData.screen_name);
               $scope.retrieveSaved();
             }
             else if (!data){
@@ -62,7 +61,6 @@ $scope.pushUser = ()=> {
 $scope.retrieveSaved = ()=> {
   mongoService.getUser($scope.authData.screen_name).then((result) => {
   if (result.data) {
-    console.log(result.data);
     $scope.userArray2 = result.data.accountsFollowing.toString();
     $scope.userId = result.data._id;
     return $scope.getUsersOnLoad();
