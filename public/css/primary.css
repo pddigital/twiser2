@@ -79,7 +79,9 @@ nav {
 .contentContainer {
   width: 80%;
   margin: auto;
-  padding: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 80px;
   text-align: center;
   min-height: 600px;
   clear: both;
@@ -109,6 +111,36 @@ nav {
   margin: auto;
   height: auto; }
 
+.bottomNav {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  height: auto;
+  border-top: 2px solid white;
+  background-color: rgba(37, 110, 178, 0.9);
+  -webkit-animation-name: bottomNav;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 2s;
+  /* Chrome, Safari, Opera */
+  animation-name: bottomNav;
+  animation-duration: 1s;
+  padding: 10px;
+  line-height: 1;
+  text-align: center; }
+
+#saveDash {
+  margin-left: 20px; }
+
+@-webkit-keyframes bottomNav {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes bottomNav {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 p, li, h1, h2, h3, h4 {
   font-family: Roboto, sans-serif;
   color: white; }
@@ -165,6 +197,14 @@ nav ul li {
 
 nav ul li:hover {
   color: #B27613; }
+
+#followCount {
+  font-size: 1.4em;
+  font-family: Roboto, sans-serif;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+  display: inline; }
 
 input {
   border: 2px solid #256EB2;
@@ -262,8 +302,48 @@ button:hover {
   width: 100%;
   height: auto;
   border-radius: 15px 15px;
-  text-align: left; }
+  text-align: left;
+  position: relative;
+  -webkit-animation-name: card;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 2s;
+  /* Chrome, Safari, Opera */
+  animation-name: card;
+  animation-duration: 1s; }
 
+.fadeDash {
+  position: relative;
+  -webkit-animation-name: dash;
+  /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 2s;
+  /* Chrome, Safari, Opera */
+  animation-name: dash;
+  animation-duration: 1s; }
+
+@-webkit-keyframes card {
+  0% {
+    opacity: 0;
+    top: 120px; }
+  100% {
+    opacity: 1;
+    top: 0px; } }
+@keyframes card {
+  0% {
+    opacity: 0;
+    top: 120px; }
+  100% {
+    opacity: 1;
+    top: 0px; } }
+@-webkit-keyframes dash {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes dash {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 #cardHead {
   height: auto;
   width: 100%;

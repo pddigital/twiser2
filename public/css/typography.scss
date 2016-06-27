@@ -67,3 +67,12 @@ nav ul li {
 nav ul li:hover {
   color: $dark-orange;
 }
+
+#followCount {
+  font-size: 1.4em;
+  font-family: $font-stack;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+  display: inline;
+}

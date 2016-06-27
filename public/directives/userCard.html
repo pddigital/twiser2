@@ -1,6 +1,6 @@
 <div id= "userCards" ng-show="usersDataArray.length > 0">
 
-  <div id="tools" ng-show="usersDataArray">
+  <div id="tools" class="fadeDash" ng-show="usersDataArray">
         <md-select class="md-no-underline" placeholder="Sort By" name="sortby" ng-model="sortProp" id="sortby">
         <md-option value="screen_name" ng-selected="!selected">Screen Name</md-option>
         <md-option value="followers_count"># Followers</md-option>
@@ -15,8 +15,6 @@
         <md-option value="-">Descending</md-option>
         </md-select>
   </div>
-
-
 
 <div id="userCard" ng-repeat="user in usersDataArray | orderBy: sortProp : sortDirection">
 

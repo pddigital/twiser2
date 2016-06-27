@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$font-stack".
-        on line 80 of ./css/usercard.scss
+        on line 112 of ./public/css/usercard.scss
 
-75:   width: 100%;
-76:   text-align: left;
-77:   padding-top: 10px;
-78:   padding-bottom: 10px;
-79:   margin-bottom: 20px;
-80:   font-family: $font-stack;
-81:   color: white;
-82:   font-size: 1em;
-83:   text-align: center;
-84: }
-85: 
+107:   width: 100%;
+108:   text-align: left;
+109:   padding-top: 10px;
+110:   padding-bottom: 10px;
+111:   margin-bottom: 20px;
+112:   font-family: $font-stack;
+113:   color: white;
+114:   font-size: 1em;
+115:   text-align: center;
+116: }
+117: 
 
 Backtrace:
-./css/usercard.scss:80
+./public/css/usercard.scss:112
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -67,4 +67,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-stack\".\A         on line 80 of ./css/usercard.scss\A \A 75:   width: 100%;\A 76:   text-align: left;\A 77:   padding-top: 10px;\A 78:   padding-bottom: 10px;\A 79:   margin-bottom: 20px;\A 80:   font-family: $font-stack;\A 81:   color: white;\A 82:   font-size: 1em;\A 83:   text-align: center;\A 84: }\A 85: "; }
+  content: "Error: Undefined variable: \"$font-stack\".\A         on line 112 of ./public/css/usercard.scss\A \A 107:   width: 100%;\A 108:   text-align: left;\A 109:   padding-top: 10px;\A 110:   padding-bottom: 10px;\A 111:   margin-bottom: 20px;\A 112:   font-family: $font-stack;\A 113:   color: white;\A 114:   font-size: 1em;\A 115:   text-align: center;\A 116: }\A 117: "; }

@@ -1,6 +1,5 @@
 
 <div class="contentContainer">
-
 <form ng-submit="getUserData(userInput)">
   <span id="userInput"><input type="text" placeholder="Type in a twitter user name" ng-model="userInput"></span>
   <button type="submit"><i class="fa fa-plus-circle" aria-hidden="true"></i>
@@ -14,7 +13,9 @@
 
 <user-card></user-card>
 
+</div>
 
-<button ng-show="usersDataArray.length" ng-click="pushUser()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save Dashboard</button>
-
+<div class="bottomNav" ng-show="usersDataArray.length">
+    <span id="followCount"># Cards : {{ usersDataArray.length }}</span>
+      <button id="saveDash" class="fadeDash" ng-click="pushUser()"><i class="fa fa-floppy-o" aria-hidden="true"></i> Save Dashboard</button>
 </div>

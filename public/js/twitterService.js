@@ -1,4 +1,4 @@
-angular.module('twiser').factory('twitterService', function($q, twitter) {
+angular.module('twiser').factory('twitterService', function($q, twitter, $rootScope) {
 
   var authorizationResult = false;
   var authUser = {};
@@ -16,6 +16,9 @@ angular.module('twiser').factory('twitterService', function($q, twitter) {
       connectTwitter: function() {
           var deferred = $q.defer();
           OAuth.popup('twitter', {cache:true}, function(error, result) { //cache means to execute the callback if the tokens are already present
+          result.get('/1.1/account/verify_credentials.json').done(function(data) {
+            $rootScope.currentUser = data.name;
+          })
               if (!error) {
                   authorizationResult = result;
                   deferred.resolve();

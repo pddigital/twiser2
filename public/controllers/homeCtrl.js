@@ -8,8 +8,7 @@ angular.module('twiser').controller('homeCtrl', function($scope, twitterService,
       $scope.connectButton = function() {
           twitterService.connectTwitter().then(function(result) {
               if (twitterService.isReady()) {
-                $rootScope.isReady = twitterService.isReady();
-              }
+                $rootScope.isReady = twitterService.isReady();              }
           })
       }
 

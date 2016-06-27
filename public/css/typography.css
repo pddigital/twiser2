@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$font-stack".
-        on line 2 of ./css/typography.scss
+        on line 2 of ./public/css/typography.scss
 
 1: p, li, h1, h2, h3, h4 {
 2:   font-family: $font-stack;
@@ -11,7 +11,7 @@ Error: Undefined variable: "$font-stack".
 7:   color: $medium-orange;
 
 Backtrace:
-./css/typography.scss:2
+./public/css/typography.scss:2
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -63,4 +63,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-stack\".\A         on line 2 of ./css/typography.scss\A \A 1: p, li, h1, h2, h3, h4 {\A 2:   font-family: $font-stack;\A 3:   color: white;\A 4: }\A 5: \A 6: a:link {\A 7:   color: $medium-orange;"; }
+  content: "Error: Undefined variable: \"$font-stack\".\A         on line 2 of ./public/css/typography.scss\A \A 1: p, li, h1, h2, h3, h4 {\A 2:   font-family: $font-stack;\A 3:   color: white;\A 4: }\A 5: \A 6: a:link {\A 7:   color: $medium-orange;"; }
