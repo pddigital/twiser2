@@ -1,4 +1,4 @@
-angular.module('twiser', ['ui.router', 'ngMaterial', 'angularMoment'])
+angular.module('twiser', ['ui.router', 'ngMaterial', 'angularMoment', 'ngCookies'])
 
 .config(function( $stateProvider, $urlRouterProvider, $mdThemingProvider ) {
 
@@ -26,6 +26,5 @@ angular.module('twiser', ['ui.router', 'ngMaterial', 'angularMoment'])
 
 .constant('twitter', {
 	userRequestUrl: 'https://api.twitter.com/1.1/users/show.json?screen_name=',
-	authRequestUrl: 'https://api.twitter.com/1.1/account/verify_credentials.json',
 	usersRequestUrl: 'https://api.twitter.com/1.1/users/lookup.json?screen_name='
 })

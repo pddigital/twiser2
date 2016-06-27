@@ -1,4 +1,4 @@
-angular.module('twiser').controller('dashCtrl', function($scope, twitterService, mongoService, twitter, $q, $rootScope){
+angular.module('twiser').controller('dashCtrl', function($scope, twitterService, mongoService, twitter, $q, $rootScope, $cookies){
 
   twitterService.initialize();
 
@@ -7,8 +7,8 @@ angular.module('twiser').controller('dashCtrl', function($scope, twitterService,
   $scope.getUserError = false;
 
   $scope.retrieveSaved = ()=> {
-    console.log($rootScope.currentUser);
-    mongoService.getUser($rootScope.currentUser).then((result) => {
+    $scope.currentUser = $cookies.get('twiserUser');
+    mongoService.getUser($scope.currentUser).then((result) => {
     if (result.data) {
       $scope.userArray2 = result.data.accountsFollowing.toString();
       $scope.userId = result.data._id;
@@ -50,7 +50,7 @@ angular.module('twiser').controller('dashCtrl', function($scope, twitterService,
         }
         else if (!$scope.userId) {
           let userObject = {};
-          userObject.user = $rootScope.currentUser;
+          userObject.user = $scope.currentUser;
           userObject.accountsFollowing = [];
           $scope.usersDataArray.forEach(function(item){
               userObject.accountsFollowing.push(item.screen_name);
