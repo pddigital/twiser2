@@ -3,6 +3,7 @@
 
 body {
   background-image: none;
+
 }
 
 .container {
@@ -10,6 +11,7 @@ body {
   background-image:url('../images/city-buildings-silhouettes.jpg');
   background-size: contain;
   background-repeat: no-repeat;
+  padding-bottom: 50px;
 
 }
 
@@ -79,7 +81,7 @@ nav ul li {
   height: 60px;
   margin: 0;
   font-size: 1.2em;
-  background-color: $medium-blue;
+  background-color: #25629a;
   border-bottom: 1px white solid;
 }
 
@@ -124,6 +126,17 @@ button {
 
 .col {
   width: 50%;
+}
+
+.bottomNav {
+  width: 100%;
+  padding: 1%;
+}
+
+#saveDash {
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: 10px;
 }
 
 }

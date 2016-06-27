@@ -468,7 +468,8 @@ md-select.md-default-theme:not([disabled]):focus ._md-select-value, md-select:no
     background-color: black;
     background-image: url("../images/city-buildings-silhouettes.jpg");
     background-size: contain;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    padding-bottom: 50px; }
 
   .contentContainer {
     padding-top: 5%;
@@ -524,7 +525,7 @@ md-select.md-default-theme:not([disabled]):focus ._md-select-value, md-select:no
     height: 60px;
     margin: 0;
     font-size: 1.2em;
-    background-color: #4EAAFF;
+    background-color: #25629a;
     border-bottom: 1px white solid; }
 
   nav ul li:hover {
@@ -558,6 +559,15 @@ md-select.md-default-theme:not([disabled]):focus ._md-select-value, md-select:no
     margin-right: 5%; }
 
   .col {
-    width: 50%; } }
+    width: 50%; }
+
+  .bottomNav {
+    width: 100%;
+    padding: 1%; }
+
+  #saveDash {
+    margin-right: 0;
+    margin-left: 0;
+    margin-top: 10px; } }
 
 /*# sourceMappingURL=primary.css.map */

@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$font-stack".
-        on line 28 of ./css/responsive.scss
+        on line 30 of ./public/css/responsive.scss
 
-23:   text-align: right;
-24:   font-size: 2.5em;
-25:   color: white;
-26:   clear: both;
-27:   height: auto;
-28:   font-family: $font-stack;
-29:   font-weight: bold;
-30: }
-31: 
-32: #hamburgerMenu {
-33:   cursor: pointer;
+25:   text-align: right;
+26:   font-size: 2.5em;
+27:   color: white;
+28:   clear: both;
+29:   height: auto;
+30:   font-family: $font-stack;
+31:   font-weight: bold;
+32: }
+33: 
+34: #hamburgerMenu {
+35:   cursor: pointer;
 
 Backtrace:
-./css/responsive.scss:28
+./public/css/responsive.scss:30
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
 /Library/Ruby/Gems/2.0.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
@@ -81,4 +81,4 @@ Backtrace:
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$font-stack\".\A         on line 28 of ./css/responsive.scss\A \A 23:   text-align: right;\A 24:   font-size: 2.5em;\A 25:   color: white;\A 26:   clear: both;\A 27:   height: auto;\A 28:   font-family: $font-stack;\A 29:   font-weight: bold;\A 30: }\A 31: \A 32: #hamburgerMenu {\A 33:   cursor: pointer;"; }
+  content: "Error: Undefined variable: \"$font-stack\".\A         on line 30 of ./public/css/responsive.scss\A \A 25:   text-align: right;\A 26:   font-size: 2.5em;\A 27:   color: white;\A 28:   clear: both;\A 29:   height: auto;\A 30:   font-family: $font-stack;\A 31:   font-weight: bold;\A 32: }\A 33: \A 34: #hamburgerMenu {\A 35:   cursor: pointer;"; }
