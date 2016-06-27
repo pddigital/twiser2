@@ -57,7 +57,7 @@ angular.module('twiser').controller('dashCtrl', function($scope, twitterService,
     }
     $scope.getUsersOnLoad = function() {
         twitterService.getTwitterRequest(twitter.usersRequestUrl +
-            $scope.userArray2).then((data)=> {
+            $scope.userArray2).then(function(data) {
             if (data) {
                 $scope.getUserError = false;
                 for (var i = 0; i < data.length; i++) {
